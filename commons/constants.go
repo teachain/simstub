@@ -1,0 +1,16 @@
+package commons
+
+const (
+	PROXY_METHOD_GETPATHS string = "getPaths"
+
+	TimeFormat string = "2006-01-02 15:04:05"
+)
+
+const (
+	REQUESTTYPE_CALL                  int = 1000
+	REQUESTTYPE_SEND_TRANSACTION      int = 1001
+	REQUESTTYPE_GET_BLOCK_NUMBER      int = 1002
+	EQUESTTYPE_GET_BLOCK_BY_NUMBER    int = 1003
+	REQUESTTYPE_GET_TRANSACTION_PROOF int = 1004
+	REQUESTTYPE_GET_TRANSACTION       int = 1005
+)

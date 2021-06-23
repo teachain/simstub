@@ -1,0 +1,31 @@
+common:
+  name: geth
+  type: geth
+  zone: judicial
+  chain: geth
+  resource: evidence
+  chain_id: 1
+node:
+  host: 192.168.3.92
+  port: 8546
+  protocol: ws
+account:
+  keystore: /Users/daminyang/service/geth/data1/keystore/UTC--2021-05-25T07-28-12.168815000Z--46e6fc87ef7b0c12b96b6098a70701bfc8edb28d
+  password: 123456
+db:
+  host: 192.168.4.248
+  port: 3306
+  username: root
+  password: root
+  db_name: gethstub
+  max_idle: 10
+  max_open: 100
+  charset: utf8mb4
+  log_mode: false
+  loc: Asia/Shanghai
+default_chain:
+  path: "judicial.sim.evidence"
+  method: "connect"
+  callback_path: "judicial.geth.evidence"
+  callback_method: "callback"
+  cross_chain_type: inner

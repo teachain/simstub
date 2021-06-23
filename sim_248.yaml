@@ -1,0 +1,31 @@
+common:
+  name: sim
+  type: sim
+  zone: judicial
+  chain: sim
+  resource: evidence
+  chain_id: 2
+node:
+  host: 192.168.4.248
+  port: 8546
+  protocol: ws
+account:
+  keystore: /Users/daminyang/service/geth/data/keystore/UTC--2021-05-20T03-37-29.930541000Z--4e136c5649b1ea2b23455dc888dff6927e11ab35
+  password: 123456
+db:
+  host: 192.168.4.248
+  port: 3306
+  username: root
+  password: root
+  db_name: simstub
+  max_idle: 10
+  max_open: 100
+  charset: utf8mb4
+  log_mode: false
+  loc: Asia/Shanghai
+default_chain:
+  path: "judicial.geth.evidence"
+  method: "connect"
+  callback_path: "judicial.sim.evidence"
+  callback_method: "callback"
+  cross_chain_type: inner

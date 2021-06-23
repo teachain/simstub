@@ -1,0 +1,11 @@
+common:
+   name: sim
+   type: sim
+node:
+   host: 192.168.4.248
+   port: 8545
+   protocol: http
+account:
+   keystore: /Users/daminyang/service/geth/data/keystore/UTC--2021-05-20T03-37-29.930541000Z--4e136c5649b1ea2b23455dc888dff6927e11ab35
+   password: 123456
+proxy_addr: 0xd9Ad6aE220C88a091A6510e9E47fb9d00361f022
